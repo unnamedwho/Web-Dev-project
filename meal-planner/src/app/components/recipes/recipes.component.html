@@ -1,0 +1,10 @@
+<div class="recipes">
+  <h2>Рецепты</h2>
+  <ul>
+    <li *ngFor="let recipe of recipes">
+      <a [routerLink]="['/recipes', recipe.id]">
+        {{ recipe.name }} ({{ recipe.calories }} ккал)
+      </a>
+    </li>
+  </ul>
+</div>
