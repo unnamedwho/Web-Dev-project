@@ -1,0 +1,6 @@
+<div class="meal-plan">
+  <h2>План питания</h2>
+  <p>Блюдо: <strong>{{ meal.name }}</strong></p>
+  <p *ngIf="meal.recipe">Рецепт: <strong>{{ meal.recipe }}</strong></p>
+  <p *ngIf="meal.calories">Калории: <strong>{{ meal.calories }}</strong> ккал</p>
+</div>
